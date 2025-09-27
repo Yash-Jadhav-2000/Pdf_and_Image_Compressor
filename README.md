@@ -1,4 +1,5 @@
 # 📘 PDF & Image Compression Tool
+Link: https://pdfandimagecompreappr-b4tbwcrjkgic4n5q2j2rcb.streamlit.app/
 
 A simple **Streamlit web app** to compress PDF files (by reducing embedded image sizes) and standalone images (JPG/PNG).  
 Built for quick file size reduction with options for **compression level** and **grayscale conversion**.  
