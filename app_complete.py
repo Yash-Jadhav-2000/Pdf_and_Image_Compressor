@@ -54,30 +54,18 @@ def compress_image(file_bytes, quality=30, max_width=1000, grayscale=False):
     return img_bytes
 
 # ---------------- Streamlit UI ----------------
-st.set_page_config(page_title="PDF & Image Compressor", page_icon=":material/photo_size_select_small:", layout="centered")
+st.set_page_config(
+    page_title="PDF & Image Compressor",
+    page_icon="📘",
+    layout="centered"
+)
 
-# Custom CSS for blue theme
-st.markdown("""
-    <style>
-        .stApp {background-color: #f5faff;}
-        h1, h2, h3, h4, h5 {color: #1e3a8a;}
-        .stButton>button {
-            background-color: #1e40af;
-            color: white;
-            border-radius: 8px;
-            padding: 8px 16px;
-            font-weight: bold;
-        }
-        .stButton>button:hover {
-            background-color: #1d4ed8;
-            color: white;
-        }
-    </style>
-""", unsafe_allow_html=True)
+# ---------------- App Header ----------------
+st.title("📘 PDF & Image Compression Tool")
+st.caption("Compress PDFs and Images quickly with optional grayscale conversion.")
 
-st.title(":blue[PDF] & :blue[Image] Compression Tool")
-
-tab1, tab2 = st.tabs(["PDF Compression", "Image Compression"])
+# ---------------- Tabs ----------------
+tab1, tab2 = st.tabs(["📄 PDF Compression", "🖼️ Image Compression"])
 
 # ---------------- TAB 1: PDF Compression ----------------
 with tab1:
